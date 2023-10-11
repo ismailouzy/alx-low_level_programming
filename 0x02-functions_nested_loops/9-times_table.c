@@ -4,9 +4,7 @@
 /**
  * times_table - entry point
  *
- *
- *
- *  Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 void times_table(void)
@@ -19,22 +17,25 @@ void times_table(void)
 		{
 			int ab = a * b;
 
-			if (ab / 10 > 0)
-			{
-				putchar(ab / 10 + '0');
-			} else
-			{
-			}
-			putchar(ab % 10 + '0');
-			if (b < 9)
+			if (b > 0)
 			{
 				putchar(',');
 				putchar(' ');
 			}
+
+			if (ab < 10 || ab % 10 == 0)
+			{
+				putchar(' ');
+			}
+			else
+			{
+				putchar(ab / 10 + '0');
+			}
+
+			putchar(ab % 10 + '0');
 		}
 
 		putchar('\n');
 	}
-
-
 }
+
