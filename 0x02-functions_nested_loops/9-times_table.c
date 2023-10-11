@@ -24,7 +24,6 @@ void times_table(void)
 				putchar(ab / 10 + '0');
 			} else
 			{
-				putchar(' ');
 			}
 			putchar(ab % 10 + '0');
 			if (b < 9)
