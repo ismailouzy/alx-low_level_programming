@@ -4,7 +4,7 @@
 /**
  * _islower - entry point
  *
- *
+ * @c: c parametre
  *
  *  Return: Always 0 (Success)
  */
