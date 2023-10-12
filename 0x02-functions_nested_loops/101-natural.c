@@ -11,8 +11,7 @@ int main(void)
 {
 	int a = 0, sum = 0;
 
-	do
-	{
+	do {
 		if ((a % 3 == 0) || (a % 5 == 0))
 			sum = sum + a;
 
@@ -21,5 +20,5 @@ int main(void)
 
 	printf("%d\n", sum);
 
-	return 0;
+	return (0);
 }
