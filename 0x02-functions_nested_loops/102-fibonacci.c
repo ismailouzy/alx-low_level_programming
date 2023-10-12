@@ -7,12 +7,12 @@
 
 int main(void)
 {
-	int count;
+	int i;
 	unsigned long f1 = 1, f2 = 2, sum;
 
 	printf("%lu, %lu", f1, f2);
 
-	for (int i = 2; i < 50; ++i)
+	for (i = 2; i < 50; ++i)
 	{
 		sum = f1 + f2;
 		printf(", ");
