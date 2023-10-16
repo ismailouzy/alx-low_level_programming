@@ -2,7 +2,9 @@
 #include "main.h"
 
 /**
- * main - check the code 
+ * reset_to_98 - Entry point
+ *
+ * @n: n parametre
  *
  * Return: Always 0.
  */
