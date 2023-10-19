@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * reverse_array - Entry point
+ * string_toupper - Entry point
  *
  * @a: a parametre
  *
