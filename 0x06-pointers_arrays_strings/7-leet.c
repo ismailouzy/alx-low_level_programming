@@ -11,9 +11,8 @@
 
 char *leet(char *s)
 {
-
-	char a[] = "aAeEoOtTlL";
-	char b[] = "4433007711";
+	char a[] = "aeotl";
+	char b[] = "43071";
 	int i;
 	int j;
 
