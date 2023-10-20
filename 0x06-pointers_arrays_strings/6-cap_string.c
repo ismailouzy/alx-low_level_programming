@@ -16,10 +16,6 @@ char *cap_string(char *s)
 
 	for (i = 0; s[i]; i++)
 	{
-		if (s[i] == '\t')
-		{
-			s[i] = ' ';
-		}
 
 		if (e == ' ' ||
 				e == '\t' ||
