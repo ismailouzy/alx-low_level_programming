@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _strchr - strch function
+ * _strchr - memset function
  *
  * @s: s parametre
  * @c: c parametre
@@ -12,15 +12,15 @@
 
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	int i = 0;
+
+	while (s[i] != '\0')
 	{
-		if (*s == c)
+		if (s[i] == c)
 		{
-			return ((char *)(s));
+			return (&s[i]);
 		}
-		s++;
+		i++;
 	}
-
 	return (NULL);
-
 }
