@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * main - entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	_puts("\"At the end of the day,
