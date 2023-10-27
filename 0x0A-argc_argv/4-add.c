@@ -8,22 +8,20 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
-	char *pos;
+	int pos, i, sum = 0;
 
 	for (i = 1; i < argc; i++)
 	{
+		pos = atoi(argv[i]);
 
-		pos = argv[i];
-
-		if (*pos < 48 || *pos > 57)
+		if (pos == 0 && *argv[i] != '0')
 		{
 			printf("Error\n");
 
 			return (1);
 		}
 
-		sum = sum +  atoi(pos);
+		sum = sum + pos;
 	}
 
 	printf("%d\n", sum);
