@@ -45,7 +45,10 @@ void print_all(const char * const format, ...)
 				i++;
 				continue;
 		}
-		printf("%s", (format[i + 1] != '\0') ? ", " : "");
+		if (format[i + 1] != '\0')
+		{
+			printf(", ");
+		}
 		i++;
 	}
 	printf("\n");
