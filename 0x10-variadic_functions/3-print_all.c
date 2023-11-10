@@ -41,6 +41,7 @@ void print_all(const char * const format, ...)
 				else
 					printf("%s", ch);
 				break;
+			default:
 				i++;
 				continue;
 		}
