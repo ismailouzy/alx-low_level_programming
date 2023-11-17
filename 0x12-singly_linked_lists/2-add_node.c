@@ -29,13 +29,13 @@ list_t *add_node(list_t **head, const char *str)
 		free(new);
 		return (NULL);
 	}
-	while (str[len] != '\0')
+	while (str[lent] != '\0')
 	{
-		len++;
+		lent++;
 	}
 	}
 
-	new->len = len;
+	new->len = lent;
 
 	new->next = *head;
 
