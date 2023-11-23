@@ -5,7 +5,7 @@
  * print_binary - prints the binary representation of a number
  *
  * @n: n parametre
- * 
+ *
  * Return: Success
  */
 
