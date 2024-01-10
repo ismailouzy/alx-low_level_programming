@@ -11,7 +11,7 @@
 
 void free_dlistint(dlistint_t *head)
 {
-	dllistint_t *ptr;
+	dlistint_t *ptr;
 
 	ptr = head;
 
