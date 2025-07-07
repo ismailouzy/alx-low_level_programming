@@ -2,6 +2,7 @@
 
 /**
  * print_times_table - prints the n times table
+ * @n: integer
  *
  * Return: None
  */
