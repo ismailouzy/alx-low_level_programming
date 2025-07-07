@@ -9,6 +9,7 @@
 int print_last_digit(int n)
 {
 	int mod;
+
 	if (n < 0)
 		mod = (n * -1) % 10;
 	else
