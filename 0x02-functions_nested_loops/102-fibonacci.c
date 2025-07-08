@@ -12,7 +12,7 @@ int main(void)
 	a = 1;
 	b = 2;
 
-	for (i = 0; i <= 50; i++)
+	for (i = 0; i < 50; i++)
 	{
 		if (i == 0)
 			printf("%ld", a);
