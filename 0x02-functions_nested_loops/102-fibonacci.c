@@ -9,13 +9,13 @@ int main(void)
 {
 	long int a, b, i, next;
 
-	a = 0;
-	b = 1;
+	a = 1;
+	b = 2;
 
 	for (i = 0; i <= 50; i++)
 	{
 		if (i == 0)
-			printf("%ld, ", a);
+			printf("%ld", a);
 		else if (i == 1)
 			printf(", %ld", b);
 		else
