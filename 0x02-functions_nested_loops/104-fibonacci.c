@@ -1,14 +1,10 @@
 #include "main.h"
 /**
- * print_num - print the number digit by digit using _putchar
- * @n: the unsigned number parameter
- *
- * main - Entry point
+ * main - Entry point.
  *
  * Return: 0 on success.
  */
 
-void print_num(unsigned long n);
 
 int main(void)
 {
@@ -38,6 +34,11 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
+
+/**
+ * print_num - print a number using _putchar
+ * @n: the unsigned number.
+ */
 
 void print_num(unsigned long n)
 {
