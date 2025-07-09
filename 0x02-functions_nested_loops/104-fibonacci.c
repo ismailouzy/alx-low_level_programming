@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * main - Entry point.
  *
@@ -6,6 +5,7 @@
  */
 
 
+void print_num(unsigned long n);
 int main(void)
 {
 	unsigned long a = 1, b = 2, next;
