@@ -19,7 +19,7 @@ int main(void)
 		{
 			_putchar(',');
 			_putchar(' ');
-			_putchar(b + '0');
+			print_num(b);
 		}
 		else
 		{
