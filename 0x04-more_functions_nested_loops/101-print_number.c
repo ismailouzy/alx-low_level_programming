@@ -7,7 +7,6 @@
 
 void print_number(int n)
 {
-	int div = n / 10;
 	unsigned int num;
 
 	num = n;
@@ -21,8 +20,8 @@ void print_number(int n)
 	}
 	else if (n > 0)
 	{
-		if (div > 0)
-			print_number(div);
+		if (num / 10)
+			print_number(num / 10);
 		_putchar(num % 10 + '0');
 	}
 	else
