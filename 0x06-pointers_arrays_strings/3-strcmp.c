@@ -12,7 +12,18 @@
 
 int _strcmp(char *s1, char *s2)
 {
+	int i = 0, value = 0;
+
+	while (s1[i] != '\0')
+	{
+		if (s1[i] != s2[i])
+		{
+			value = s1[i] - s2[i];
+			break;
+		}
+		i++;
+	}
 	if (s1 == s2)
 		return (0);
-	return (*s1 - *s2);
+	return (value);
 }
