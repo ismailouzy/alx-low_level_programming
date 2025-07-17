@@ -29,16 +29,20 @@ char *cap_string(char *s)
 	if (s[0] >= 'a' && s[0] <= 'z')
 			s[0] -= 32;
 
-	while (s[i] != '\0')
+	else
 	{
-		for (j = 0; j < 13; j++)
+		while (s[i] != '\0')
 		{
-			if (s[i] == arr[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
+			for (j = 0; j < 13; j++)
 			{
-				s[i + 1] -= 32;
+				if (s[i] == arr[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				{
+					s[i + 1] -= 32;
+					break;
+				}
 			}
+			i++;
 		}
-		i++;
 	}
 
 	return (s);
