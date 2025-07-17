@@ -26,24 +26,21 @@ char *cap_string(char *s)
 	};
 	int i = 0, j = 0;
 
-	if (s[0] >= 'a' && s[0] <= 'z')
-			s[0] -= 32;
 
-	else
+	while (s[i] != '\0')
 	{
-		while (s[i] != '\0')
+		for (j = 0; j < 13; j++)
 		{
-			for (j = 0; j < 13; j++)
+			if (s[i] == arr[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
 			{
-				if (s[i] == arr[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
-				{
-					s[i + 1] -= 32;
-					break;
-				}
+				s[i + 1] -= 32;
+				break;
 			}
-			i++;
 		}
+		i++;
 	}
+	if (s[0] >= 'a' && s[0] <= 'z')
+		s[0] -= 32;
 
 	return (s);
 }
